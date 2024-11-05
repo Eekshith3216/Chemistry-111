@@ -1,0 +1,149 @@
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Table of Contents */
+#toc {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toc h2 {
+    margin-bottom: 10px;
+}
+
+#toc ul {
+    list-style-type: none;
+}
+
+#toc ul li {
+    margin-bottom: 8px;
+}
+
+#toc a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}
+
+/* Main content blocks */
+.content-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px; /* Space between sections */
+    align-items: center;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse; /* For zig-zag effect */
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 30px; /* Space between heading and content */
+    font-size: 28px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Adding more spacing between sections to give a gap between each heading */
+.content-block + .content-block {
+    margin-top: 80px; /* Space before the next section */
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 2px solid #ccc;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Style for the About Us button */
+.about-us-button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.about-us-button:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+}
+
